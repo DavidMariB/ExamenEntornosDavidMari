@@ -16,26 +16,28 @@ public class Putadon {
 		//Variables inicialización
 		String frase="";
 		int numPos=0;
-		int numRepeticiones=0;
 		char letra=0;
-		
-		//Pedimos datos
-		Scanner sc=new Scanner(System.in);
-		
-		System.out.println("Introduce tu frase");
-		frase = sc.nextLine();
-		
-		System.out.println("Introduce la letra a buscar");
-		letra = sc.nextLine().charAt(0); //charAt(0) devuelve la primera letra
+		int numRepeticiones=0;
+	
+	
+			//Pedimos datos
+			Scanner sc=new Scanner(System.in);
+			
+			System.out.println("Introduce tu frase");
+			frase = sc.nextLine();
+	
+			System.out.println("Introduce la letra a buscar");
+			letra = sc.nextLine().charAt(0); //charAt(0) devuelve la primera letra
+			
 		
 		//Buscamos las letras
 		for(int i=0;i<frase.length();i++){
-			if(letra==frase.charAt(i-1)){
+			if(letra==frase.charAt(i)){
 				numRepeticiones=numRepeticiones;
 				System.out.println("Letra "+letra+" encontrada en la posicion "+i);
 			}
 		}
 		System.out.println("Total repeticiones "+numRepeticiones);
-	
-	}
+	  }
 }
+
